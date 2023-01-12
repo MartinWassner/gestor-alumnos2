@@ -1,4 +1,4 @@
-    <button mat-flat-button color="primary" (click)="addStudent()" style="margin: 0 0 10px 0"> Añadir alumno </button>   
+<button mat-flat-button color="primary" (click)="addStudent()" style="margin: 0 0 10px 0"> Añadir alumno </button>   
 
 <table mat-table [dataSource]="students">
     
@@ -16,7 +16,7 @@
         <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
     </ng-container>
     <ng-container matColumnDef="isActive">
-        <th mat-header-cell *matHeaderCellDef> Online </th>
+        <th mat-header-cell *matHeaderCellDef> Activo </th>
         <td mat-cell *matCellDef="let element"> {{element.isActive}} </td>
     </ng-container>
     <ng-container matColumnDef="edit">
