@@ -37,4 +37,7 @@ addStudent() {
 }
 
 
+removeStudent(student: Student) {
+  this.students = this.students.filter((stu)=> stu.id !== student.id)
+}
 }
