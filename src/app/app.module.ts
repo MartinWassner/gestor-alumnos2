@@ -11,6 +11,8 @@ import { DashboardLayoutComponent } from './Layouts/dashboard-layout/dashboard-l
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PageWrapperComponent } from './Shared/page-wrapper/page-wrapper.component';
 import { StudentsPageComponent } from './Pages/students-page/students-page.component';
+import { MyMaterialModule } from './Shared/modules/my-material.module';
+
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { StudentsPageComponent } from './Pages/students-page/students-page.compo
         AppRoutingModule,
         LayoutsModule,
         BrowserAnimationsModule,
+        MyMaterialModule,
+
     ]
 })
 export class AppModule { }
