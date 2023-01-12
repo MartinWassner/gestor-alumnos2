@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
+import { StudentDialogComponent } from './components/student-dialog/student-dialog.component';
 
 
 
@@ -11,6 +12,8 @@ import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
     //NavbarComponent,
     //ToolbarComponent,
     //PageWrapperComponent
+  
+    //StudentDialogComponent
   ],
   imports: [
     CommonModule,

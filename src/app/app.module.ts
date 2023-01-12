@@ -12,6 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PageWrapperComponent } from './Shared/page-wrapper/page-wrapper.component';
 import { StudentsPageComponent } from './Pages/students-page/students-page.component';
 import { MyMaterialModule } from './Shared/modules/my-material.module';
+import { ReactiveFormsModule } from '@angular/forms'
+import { StudentDialogComponent } from './Shared/components/student-dialog/student-dialog.component';
 
 
 
@@ -22,7 +24,8 @@ import { MyMaterialModule } from './Shared/modules/my-material.module';
         NavbarComponent,
         DashboardLayoutComponent,
         PageWrapperComponent,
-        StudentsPageComponent
+        StudentsPageComponent,
+        StudentDialogComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -32,7 +35,7 @@ import { MyMaterialModule } from './Shared/modules/my-material.module';
         LayoutsModule,
         BrowserAnimationsModule,
         MyMaterialModule,
-
+        ReactiveFormsModule
     ]
 })
 export class AppModule { }

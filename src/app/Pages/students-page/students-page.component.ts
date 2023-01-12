@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Student } from '../../Models/student.model';
+import { StudentDialogComponent } from '../../Shared/components/student-dialog/student-dialog.component';
 
 @Component({
   selector: 'app-students-page',
@@ -16,5 +18,11 @@ export class StudentsPageComponent {
     new Student(1, 'Marisol', 'Nuñez', false)
   ]
 displayedColumns = ['id', 'firstName','lastName','isActive','edit','delete'];
+
+constructor(private readonly dialogService: MatDialog) {}
+
+addStudent() {
+  this.dialogService.open(StudentDialogComponent)
+}
 
 }
