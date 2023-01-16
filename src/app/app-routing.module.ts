@@ -1,15 +1,55 @@
-import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DashboardLayoutComponent } from './Layouts/dashboard-layout/dashboard-layout.component';
+import { StudentsPageComponent } from './Pages/students-page/students-page.component';
+import { AnotherPage1Component } from './Pages/another-page1/another-page1.component';
+import { AnotherPage2Component } from './Pages/another-page2/another-page2.component';
+import { CleanLayoutComponent } from './Layouts/clean-layout/clean-layout.component';
+import { LoginPageComponent } from './Pages/login-page/login-page.component';
 
 const routes: Routes = [
   {
     path: '',
+    component: DashboardLayoutComponent,
+    children:[
+      {
+        path: 'estudiantes',
+        component: StudentsPageComponent
+      },
+      {
+        path: 'another-page1',
+        component:AnotherPage1Component
+      },
+      {
+        path: 'another-page2',
+        component: AnotherPage2Component
+      },
+    ]
     
+  },
+  {
+    path: 'auth',
+    component: CleanLayoutComponent,
+    children: [
+      {
+        path: 'login',
+        component: LoginPageComponent,
+      },
+      {
+        path: '**',
+        redirectTo: 'login'
+      }
+    ]
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes),
+    CommonModule,
+    
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

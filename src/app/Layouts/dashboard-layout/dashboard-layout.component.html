@@ -1,10 +1,8 @@
+<app-navbar></app-navbar>
 <div class="grid-container">
-    <app-navbar></app-navbar>
-        <div class="toolbar-container">
-            <app-toolbar></app-toolbar>
-        </div>
-
-        <div class="main-container">
-            
-        </div>
+    <app-toolbar></app-toolbar>
+    <app-page-wrapper>
+        <router-outlet></router-outlet>
+        <!-- <app-students-page></app-students-page> -->
+    </app-page-wrapper>
 </div>

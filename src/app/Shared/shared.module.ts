@@ -4,24 +4,31 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
 import { StudentDialogComponent } from './components/student-dialog/student-dialog.component';
+import { MyMaterialModule } from './modules/my-material.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 
 
 @NgModule({
   declarations: [
-    //NavbarComponent,
-    //ToolbarComponent,
-    //PageWrapperComponent
-  
-    //StudentDialogComponent
+    NavbarComponent,
+    ToolbarComponent,
+    PageWrapperComponent,  
+    StudentDialogComponent,
   ],
   imports: [
     CommonModule,
+    MyMaterialModule,
+    ReactiveFormsModule,
+    RouterModule
     
   ],
   exports: [
-    //NavbarComponent,
-    //ToolbarComponent
+    NavbarComponent,
+    ToolbarComponent,
+    PageWrapperComponent,  
+    StudentDialogComponent,
   ]
 })
 export class SharedModule { }
