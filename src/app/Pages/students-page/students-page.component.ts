@@ -30,7 +30,6 @@ addStudent() {
 
       const lastId = this.students[this.students.length - 1 ]?.id;
 
-      //this.students.push(new Student(lastId + 1 , value.firstName, value.lastName, true))
       this.students = [...this.students, new Student(lastId + 1 , value.firstName, value.lastName, true)];
     }
   })

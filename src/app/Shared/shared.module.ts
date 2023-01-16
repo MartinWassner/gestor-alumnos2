@@ -29,6 +29,7 @@ import { RouterModule } from '@angular/router';
     ToolbarComponent,
     PageWrapperComponent,  
     StudentDialogComponent,
+    MyMaterialModule
   ]
 })
 export class SharedModule { }

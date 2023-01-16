@@ -7,6 +7,7 @@ import { AnotherPage1Component } from './Pages/another-page1/another-page1.compo
 import { AnotherPage2Component } from './Pages/another-page2/another-page2.component';
 import { CleanLayoutComponent } from './Layouts/clean-layout/clean-layout.component';
 import { LoginPageComponent } from './Pages/login-page/login-page.component';
+import { EstudianteDetalleComponent } from './Pages/estudiante-detalle/estudiante-detalle.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
       {
         path: 'estudiantes',
         component: StudentsPageComponent
+      },
+      {
+        path: 'estudiantes/:id',
+        component: EstudianteDetalleComponent
       },
       {
         path: 'another-page1',
