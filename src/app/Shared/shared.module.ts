@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 
 
 
+
 @NgModule({
   declarations: [
     NavbarComponent,
@@ -29,7 +30,7 @@ import { RouterModule } from '@angular/router';
     ToolbarComponent,
     PageWrapperComponent,  
     StudentDialogComponent,
-    MyMaterialModule
+    MyMaterialModule,
   ]
 })
 export class SharedModule { }

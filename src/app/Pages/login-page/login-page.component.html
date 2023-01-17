@@ -1,1 +1,24 @@
-<p>login-page works!</p>
+<body>
+    <div>
+       <div class="wave"></div>
+       <div class="wave"></div>
+       <div class="wave"></div>
+    </div>
+
+    <div mat-dialog-content>
+        <form [formGroup]="loginForm">
+            <mat-form-field appearance="fill">
+                <mat-label>Nombre</mat-label>
+                <input [formControl]="usernameControl" matInput placeholder="">
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="fill">
+                <mat-label>Apellido</mat-label>
+                <input [formControl]="passwordControl" matInput placeholder="">    
+            </mat-form-field>
+            <br>
+            <button mat-button (click)="close()">Cancelar</button>
+            <button mat-button [mat-dialog-close]="loginForm.value" cdkFocusInitial>Guardar</button>
+        </form>
+    </div>
+</body>

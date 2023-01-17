@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { last } from 'rxjs';
 import { Student } from '../../Models/student.model';
 import { StudentDialogComponent } from '../../Shared/components/student-dialog/student-dialog.component';
+
 
 @Component({
   selector: 'app-students-page',
@@ -51,4 +52,7 @@ editStudent(student: Student){
     }
   })
   }
+  
+
 }
+

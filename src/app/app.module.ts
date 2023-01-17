@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StudentsPageComponent } from './Pages/students-page/students-page.component';
 import { MyMaterialModule } from './Shared/modules/my-material.module';
 import { ReactiveFormsModule } from '@angular/forms'
-
+import { CdkTableModule } from '@angular/cdk/table';
 
 
 @NgModule({
@@ -23,7 +23,9 @@ import { ReactiveFormsModule } from '@angular/forms'
         BrowserAnimationsModule,
         MyMaterialModule,
         ReactiveFormsModule,
-        AppRoutingModule
-    ]
+        AppRoutingModule,
+        
+    ],
+    
 })
 export class AppModule { }
