@@ -1,1 +1,42 @@
-<p>login-page works!</p>
+<body>
+    <div>
+       <div class="wave"></div>
+       <div class="wave"></div>
+       <div class="wave"></div>
+    </div>
+
+<!-- ESTE VA A SER EL LOGIN CUANDO ARREGLE LO DE MATERIAL -->
+
+    <div mat-dialog-content class="login-form">
+        <b>Hola de nuevo!</b>
+        <form [formGroup]="loginForm">
+            <mat-form-field appearance="fill">
+                <mat-label>Correo o Usuario</mat-label>
+                <input [formControl]="usernameControl" matInput placeholder="">
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="fill">
+                <mat-label>Contraseña</mat-label>
+                <input [formControl]="passwordControl" matInput placeholder="">    
+            </mat-form-field>
+            <br>
+        </form>
+        <button mat-button [mat-dialog-close]="loginForm.value" cdkFocusInitial >Aceptar</button>
+    </div>
+</body>
+<!-- ESTE ES LOGIN PROVISORIO  -->
+<!-- <div class="login-container">
+    <div class="login-form">
+        <b>Hola de nuevo!</b>
+        <br>
+        <p>Email</p>
+        <input type="email" name="Correo" id="" required >
+        
+        <p>Contraseña</p>
+        <input type="password" name="Contraseña">
+        <br>
+        
+        <a routerLink="estudiantes" style="align-self: center;" ><input type="button" value="Aceptar"></a>
+    </div>
+    
+</div> -->

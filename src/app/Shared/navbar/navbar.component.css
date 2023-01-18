@@ -2,11 +2,12 @@ header{
     background-color: lightskyblue;
     height: 50px;
     display: flex;
-    align-items: center;
+    align-items: center;    
 }
 
 p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: medium;
-    margin-left: 20px;
+    margin-left: 25px;
+    margin-top: 5px;
 }

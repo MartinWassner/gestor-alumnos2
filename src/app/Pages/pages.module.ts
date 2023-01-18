@@ -3,22 +3,26 @@ import { CommonModule } from '@angular/common';
 import { StudentsPageComponent } from './students-page/students-page.component';
 import { MyMaterialModule } from '../Shared/modules/my-material.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AnotherPage1Component } from './another-page1/another-page1.component';
-import { AnotherPage2Component } from './another-page2/another-page2.component';
+import { CursosComponent } from './cursos/another-page1.component';
+import { AnotherPage2Component } from './inscripciones/another-page2.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { EstudianteDetalleComponent } from './estudiante-detalle/estudiante-detalle.component';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table'
+import { SharedModule } from '../Shared/shared.module';
+import { RouterModule } from '@angular/router';
+
 
 import { CdkTableModule } from '@angular/cdk/table';
 
 @NgModule({
   declarations: [
     StudentsPageComponent,
-    AnotherPage1Component,
+    CursosComponent,
     AnotherPage2Component,
     LoginPageComponent,
-    EstudianteDetalleComponent
+    EstudianteDetalleComponent,
+
   ],
   imports: [
     CommonModule,
@@ -27,6 +31,11 @@ import { CdkTableModule } from '@angular/cdk/table';
     ReactiveFormsModule,
     MyMaterialModule
   ],
-  exports:[MatTableModule]
+  exports:[
+    MatTableModule,
+    SharedModule,
+    RouterModule
+  ]
+  
 })
 export class PagesModule { }
