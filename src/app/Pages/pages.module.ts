@@ -11,6 +11,7 @@ import { MatTableModule } from '@angular/material/table';
 import { CdkTableModule } from '@angular/cdk/table';
 import { StudentDialogComponent } from '../Shared/components/student-dialog/student-dialog.component';
 import { SharedModule } from '../Shared/shared.module';
+import { Router, RouterModule } from '@angular/router';
 
 
 
@@ -30,7 +31,7 @@ import { SharedModule } from '../Shared/shared.module';
     MatTableModule,
     CdkTableModule,
     SharedModule,
-    
+    RouterModule
   ],
 })
 export class PagesModule { }
