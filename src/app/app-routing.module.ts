@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardLayoutComponent } from './Layouts/dashboard-layout/dashboard-layout.component';
 import { StudentsPageComponent } from './Pages/students-page/students-page.component';
