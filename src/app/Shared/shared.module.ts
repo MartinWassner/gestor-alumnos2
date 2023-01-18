@@ -7,7 +7,7 @@ import { StudentDialogComponent } from './components/student-dialog/student-dial
 import { MyMaterialModule } from './modules/my-material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-
+import { PagesModule } from '../Pages/pages.module';
 
 
 @NgModule({

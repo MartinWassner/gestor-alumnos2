@@ -8,7 +8,7 @@ import { StudentsPageComponent } from './Pages/students-page/students-page.compo
 import { MyMaterialModule } from './Shared/modules/my-material.module';
 import { ReactiveFormsModule } from '@angular/forms'
 
-
+import { MatTableModule } from '@angular/material/table'
 
 @NgModule({
     declarations: [
@@ -17,13 +17,14 @@ import { ReactiveFormsModule } from '@angular/forms'
     providers: [],
     bootstrap: [AppComponent],
     imports: [
+        MyMaterialModule,
         BrowserModule,
         AppRoutingModule,
         LayoutsModule,
         BrowserAnimationsModule,
-        MyMaterialModule,
         ReactiveFormsModule,
         AppRoutingModule
-    ]
+    ],
+   
 })
 export class AppModule { }

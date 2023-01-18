@@ -7,9 +7,10 @@ import { AnotherPage1Component } from './another-page1/another-page1.component';
 import { AnotherPage2Component } from './another-page2/another-page2.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { EstudianteDetalleComponent } from './estudiante-detalle/estudiante-detalle.component';
-import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { MatTableModule } from '@angular/material/table'
 
-
+import { CdkTableModule } from '@angular/cdk/table';
 
 @NgModule({
   declarations: [
@@ -21,9 +22,11 @@ import { MatTableModule } from '@angular/material/table';
   ],
   imports: [
     CommonModule,
-    MyMaterialModule,
+    CdkTableModule,
+ 
     ReactiveFormsModule,
-    MatTableModule,
-  ]
+    MyMaterialModule
+  ],
+  exports:[MatTableModule]
 })
 export class PagesModule { }
