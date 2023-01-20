@@ -9,11 +9,31 @@ import { CleanLayoutComponent } from './Layouts/clean-layout/clean-layout.compon
 import { LoginPageComponent } from './Pages/login-page/login-page.component';
 import { EstudianteDetalleComponent } from './Pages/estudiante-detalle/estudiante-detalle.component';
 
+
 const routes: Routes = [
   {
     path: '',
+    component: CleanLayoutComponent,
+    children: [
+        {
+          path: 'login',
+          component: LoginPageComponent,
+        },
+        {
+          path: '**',
+          redirectTo: 'login'
+        },
+        {
+          path: 'xd',
+          redirectTo: 'dashboard'
+          
+        }
+      ]
+    },
+  {
+    path: 'dashboard',
     component: DashboardLayoutComponent,
-    children:[
+    children: [
       {
         path: 'estudiantes',
         component: StudentsPageComponent
@@ -31,25 +51,8 @@ const routes: Routes = [
         component: AnotherPage2Component
       },
     ]
-    
-  },
-  {
-    path: 'auth',
-    component: CleanLayoutComponent,
-    children: [
-      {
-        path: 'login',
-        component: LoginPageComponent,
-      },
-      {
-        path: '**',
-        redirectTo: 'login'
-      },
-      
-      
-    ]
   }
-];
+]
 
 @NgModule({
   imports: [

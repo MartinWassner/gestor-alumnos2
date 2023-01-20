@@ -11,7 +11,7 @@
         <b>Hola de nuevo!</b>
         <form [formGroup]="loginForm">
             <mat-form-field appearance="fill">
-                <mat-label>Correo o Usuario</mat-label>
+                <mat-label>Usuario</mat-label>
                 <input [formControl]="usernameControl" matInput placeholder="">
             </mat-form-field>
             <br>
@@ -21,7 +21,9 @@
             </mat-form-field>
             <br>
         </form>
-        <button mat-flat-button><a href="/estudiantes">Aceptar</a></button> <!-- Se que no es routing como tal pero hasta que tenga verificación de usuario sirve -->
+        <button mat-flat-button style="background:rgba(236, 255, 255, 0.5); border: 1px solid grey"><a routerLink="xd">Aceptar</a></button>  <!-- Se que no es routing como tal pero hasta que tenga verificación de usuario sirve -->
     </div>
+
+    <router-outlet></router-outlet>
 </body>
 

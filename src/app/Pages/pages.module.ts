@@ -16,6 +16,8 @@ import { RouterModule } from '@angular/router';
 import { CdkTableModule } from '@angular/cdk/table';
 import { AppRoutingModule } from '../app-routing.module';
 
+
+
 @NgModule({
   declarations: [
     StudentsPageComponent,
@@ -23,15 +25,16 @@ import { AppRoutingModule } from '../app-routing.module';
     AnotherPage2Component,
     LoginPageComponent,
     EstudianteDetalleComponent,
-
   ],
   imports: [
     CommonModule,
     CdkTableModule,
-    //AppRoutingModule,
+    AppRoutingModule,
     ReactiveFormsModule,
     MyMaterialModule,
     RouterModule,
+
+
   ],
   exports:[
     MatTableModule,
