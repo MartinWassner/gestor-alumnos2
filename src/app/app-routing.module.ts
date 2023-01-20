@@ -46,6 +46,7 @@ const routes: Routes = [
         redirectTo: 'login'
       },
       
+      
     ]
   }
 ];
