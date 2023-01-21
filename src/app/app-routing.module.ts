@@ -19,10 +19,10 @@ const routes: Routes = [
           path: 'login',
           component: LoginPageComponent,
         },
-        {
-          path: '**',
-          redirectTo: 'login'
-        },
+        // {
+        //   path: '**',
+        //   redirectTo: 'login'
+        // },
         {
           path: 'xd',
           redirectTo: 'dashboard'

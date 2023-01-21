@@ -8,6 +8,7 @@ import { MyMaterialModule } from './Shared/modules/my-material.module';
 import { ReactiveFormsModule } from '@angular/forms'
 
 import { MatTableModule } from '@angular/material/table'
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import { MatTableModule } from '@angular/material/table'
         LayoutsModule,
         BrowserAnimationsModule,
         ReactiveFormsModule,
-        AppRoutingModule
+        AppRoutingModule,
+        HttpClientModule,
     ],
    
 })

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Student } from 'src/app/Models/student.model';
 import { EstudiantesService } from '../../Services/estudiantes.service';
 
 @Component({
@@ -10,8 +11,11 @@ import { EstudiantesService } from '../../Services/estudiantes.service';
 export class EstudianteDetalleComponent {
   constructor (private readonly route: ActivatedRoute, private readonly estudiantesService: EstudiantesService) {
     this.route.params.subscribe((params) => {
-      console.log(this.estudiantesService.getEstudiantePorId(params['id']))
+      // console.log(this.estudiantesService.getAlumnosFromAPI())
 
     })
   }
-}
+
+  
+  }
+
