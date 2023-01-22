@@ -6,9 +6,8 @@ import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
 import { StudentDialogComponent } from './components/student-dialog/student-dialog.component';
 import { MyMaterialModule } from './modules/my-material.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { PagesModule } from '../Pages/pages.module';
-
 
 
 @NgModule({

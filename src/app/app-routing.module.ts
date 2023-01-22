@@ -13,23 +13,8 @@ import { EstudianteDetalleComponent } from './Pages/estudiante-detalle/estudiant
 const routes: Routes = [
   {
     path: '',
-    component: CleanLayoutComponent,
-    children: [
-        {
-          path: 'login',
-          component: LoginPageComponent,
-        },
-        // {
-        //   path: '**',
-        //   redirectTo: 'login'
-        // },
-        {
-          path: 'xd',
-          redirectTo: 'dashboard'
-          
-        }
-      ]
-    },
+    component: LoginPageComponent,
+  },
   {
     path: 'dashboard',
     component: DashboardLayoutComponent,
@@ -44,12 +29,13 @@ const routes: Routes = [
       },
       {
         path: 'another-page1',
-        component:CursosComponent
+        component: CursosComponent
       },
       {
         path: 'another-page2',
         component: AnotherPage2Component
       },
+
     ]
   }
 ]

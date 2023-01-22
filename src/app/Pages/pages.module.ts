@@ -7,12 +7,9 @@ import { CursosComponent } from './cursos/another-page1.component';
 import { AnotherPage2Component } from './inscripciones/another-page2.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { EstudianteDetalleComponent } from './estudiante-detalle/estudiante-detalle.component';
-import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table'
 import { SharedModule } from '../Shared/shared.module';
-import { RouterModule } from '@angular/router';
-
-
+import { RouterModule, Routes } from '@angular/router';
 import { CdkTableModule } from '@angular/cdk/table';
 import { AppRoutingModule } from '../app-routing.module';
 
@@ -34,11 +31,14 @@ import { AppRoutingModule } from '../app-routing.module';
     MyMaterialModule,
     RouterModule,
 
-
   ],
   exports:[
     MatTableModule,
     SharedModule,
+    CursosComponent,
+    LoginPageComponent,
+    EstudianteDetalleComponent,
+    StudentsPageComponent
   ]
   
 })
